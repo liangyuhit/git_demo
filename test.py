@@ -5,6 +5,9 @@ Created on 13.05.2019
 @author: yu03
 '''
 
+import numpy as np
+from numpy.polynomial.hermite import hermval
+
 a = '2019-5-6 20:03:16'
 b = '2019-5-6 20:05:02 from Github'
 c = '2019-5-6 20:11:21 from PTB'
@@ -17,4 +20,6 @@ i = '2019-5-8 14:15:11 from PTB'
 j = '2019-5-8 14:18:49 from Github'
 k = '2019-5-13 14:41:42 from PTB'
 
-print(k)
+a = hermval(2, [0,0,1])
+
+print(a)
