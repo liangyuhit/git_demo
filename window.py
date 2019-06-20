@@ -100,4 +100,5 @@ plt.title(r"Frequency response of the Gaussian window ($\sigma$=7)")
 plt.ylabel("Normalized magnitude [dB]")
 plt.xlabel("Normalized frequency [cycles per sample]")
 
+plt.get_current_fig_manager().window.setGeometry(20, 50, 1000, 1800)
 plt.show()
