@@ -20,16 +20,16 @@ timezone = pytz.timezone('Asia/Shanghai')
 now_timezone = datetime.datetime.now(timezone).strftime("%Y-%m-%d %H:%M:%S")
 print('China time:     ', now_timezone)
 
-timestamp = int(time.time())
-# timestamp = 1561471260
+# timestamp = int(time.time())
+timestamp = 1561564380
 print('Timestamp:     ', timestamp)
 
 time = datetime.datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S')
 print('Convert Local:     ', time)
-
+ 
 time_utc = datetime.datetime.utcfromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S')
 print('Convert UTC:     ', time_utc)
 
-timezone = pytz.timezone('Asia/Shanghai')
+timezone = pytz.timezone('Asia/Harbin')
 time_timezone = datetime.datetime.fromtimestamp(timestamp, tz=timezone).strftime('%Y-%m-%d %H:%M:%S')
-print('China time:     ', now_timezone)
+print('China time:     ', time_timezone)
