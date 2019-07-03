@@ -21,7 +21,7 @@ now_timezone = datetime.datetime.now(timezone).strftime("%Y-%m-%d %H:%M:%S")
 print('China time:     ', now_timezone)
 
 # timestamp = int(time.time())
-timestamp = 1561994700
+timestamp = 1562165100
 print('Timestamp:     ', timestamp)
 
 time = datetime.datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S')
@@ -33,3 +33,5 @@ print('Convert UTC:     ', time_utc)
 timezone = pytz.timezone('Asia/Harbin')
 time_timezone = datetime.datetime.fromtimestamp(timestamp, tz=timezone).strftime('%Y-%m-%d %H:%M:%S')
 print('China time:     ', time_timezone)
+
+
