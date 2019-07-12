@@ -7,6 +7,11 @@ Created on 13.05.2019
 
 import numpy as np
 from numpy.polynomial.hermite import hermval
+import matplotlib.pyplot as plt
+import django
+import bokeh
+import scipy
+
 
 a = '2019-5-6 20:03:16'
 b = '2019-5-6 20:05:02 from Github'
