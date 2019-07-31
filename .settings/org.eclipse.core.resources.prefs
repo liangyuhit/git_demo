@@ -5,6 +5,7 @@ encoding/IDS.py=utf-8
 encoding/Newton_RIng.py=utf-8
 encoding/envelope.py=utf-8
 encoding/line_interpolation.py=utf-8
+encoding/save_load_dat.py=utf-8
 encoding/save_load_txt.py=utf-8
 encoding/test.py=utf-8
 encoding/time.py=utf-8
