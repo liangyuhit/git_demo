@@ -22,3 +22,4 @@ if 1:
     f = open(file_name, 'rb')
     a = np.load(f, allow_pickle=True)
     print(a)
+    print(len(a))
