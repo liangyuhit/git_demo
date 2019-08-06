@@ -44,10 +44,12 @@ X = np.linspace(-0.005, 0.005, num=301)
 Y = X
 x, y = np.meshgrid(X, Y)
 r_1 = np.sqrt((center_1_x-x)**2 + (center_1_y-y)**2)
-A_1 = np.sqrt(2*P_1/np.pi/(w_z_1**2)) * np.exp(-r_1**2/w_z_1**2)
+# A_1 = np.sqrt(2*P_1/np.pi/(w_z_1**2)) * np.exp(-r_1**2/w_z_1**2)
+A_1 = w0_1 / w_z_1 * np.exp(-r_1**2/w_z_1**2)
 Phi_1 = k*r_1**2/2/R_z_1 - Gouy_Z_1 + k*Z_pos_1
 r_2 = np.sqrt((center_2_x-x)**2 + (center_2_y-y)**2)
-A_2 = np.sqrt(2*P_2/np.pi/(w_z_2**2)) * np.exp(-r_2**2/w_z_2**2)
+# A_2 = np.sqrt(2*P_2/np.pi/(w_z_2**2)) * np.exp(-r_2**2/w_z_2**2)
+A_2 = w0_2 / w_z_2 * np.exp(-r_2**2/w_z_2**2)
 Phi_2 = k*r_2**2/2/R_z_2 - Gouy_Z_2 + k*Z_pos_2
 A = (A_1+A_2)**2
 # E = A * np.exp(j * (2*np.pi*Fc*t-Phi))
