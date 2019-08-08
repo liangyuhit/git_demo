@@ -7,6 +7,7 @@ encoding/Newton_RIng.py=utf-8
 encoding/PSD_test.py=utf-8
 encoding/envelope.py=utf-8
 encoding/line_interpolation.py=utf-8
+encoding/numpy_operation.py=utf-8
 encoding/save_load_npy.py=utf-8
 encoding/save_load_txt.py=utf-8
 encoding/test.py=utf-8
