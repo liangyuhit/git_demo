@@ -7,8 +7,11 @@ Created on 08.08.2019
 
 import numpy as np
 
-a = np.array([np.array([[1,2,3],[3,4,5]]), 1])
+a = np.arange(10)
 print(a)
-a = a[0]
-print(a)
-print(a[0])
+
+b = a.reshape(5,2,order='F')
+print(b)
+
+c = a.reshape(2, 5)
+print(c)
