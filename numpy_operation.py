@@ -7,11 +7,9 @@ Created on 08.08.2019
 
 import numpy as np
 
-a = np.arange(10)
+a = np.arange(24)
 print(a)
-
-b = a.reshape(5,2,order='F')
-print(b)
-
-c = a.reshape(2, 5)
+# b = a.reshape(5,2,order='F')
+# print(b)
+c = a.reshape(2, 3, 4)
 print(c)
