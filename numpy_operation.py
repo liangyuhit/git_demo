@@ -6,6 +6,7 @@ Created on 08.08.2019
 '''
 
 import numpy as np
+import matplotlib.pyplot as plt
 
 a = np.arange(24)
 print(a)
@@ -17,3 +18,7 @@ print(len(c))
 d = np.mean(c,axis=1)
 print(d)
 print(len(d))
+
+plt.figure(1)
+plt.plot(a)
+plt.show()
