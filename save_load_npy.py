@@ -13,7 +13,7 @@ def fit_func_line(x, p, q):
     return p*x+q
 
 
-file_name = r'C:\Users\yu03\eclipse-workspace\git_demo\test.npy'
+file_name = r'C:\Users\yu03\Desktop\NMC Room\6 Dof PI\Rigid\np_16line\3_Noise_16line_10h_2.5Hz\1.npy'
 
 
 if 0:
@@ -27,7 +27,7 @@ if 0:
         np.save(f, out)
         f.close()
 
-if 1:
+if 0:
     f = open(file_name, 'rb')
     f_size = os.fstat(f.fileno()).st_size
     print(f_size)
@@ -42,22 +42,39 @@ if 1:
     print(len(lines))
 
     
-    x_axis = np.linspace(0, len(time_sequence)-1, len(time_sequence))
-#     time_sequence = time_sequence[500:3500]
-#     x_axis = x_axis[500:3500]
-    fit_params = curve_fit(fit_func_line, np.linspace(0, len(time_sequence)-1, len(time_sequence)), time_sequence)
-    [p, q] = fit_params[0]
-    print(p)
-    linear_fit = np.linspace(0, len(time_sequence)-1, len(time_sequence)) * p + q
-    [p, q] = np.polyfit(x_axis, time_sequence, 1)
-    linear_fit = x_axis * p + q
+#     x_axis = np.linspace(0, len(time_sequence)-1, len(time_sequence))
+# #     time_sequence = time_sequence[500:3500]
+# #     x_axis = x_axis[500:3500]
+#     fit_params = curve_fit(fit_func_line, np.linspace(0, len(time_sequence)-1, len(time_sequence)), time_sequence)
+#     [p, q] = fit_params[0]
+#     print(p)
+#     linear_fit = np.linspace(0, len(time_sequence)-1, len(time_sequence)) * p + q
+#     [p, q] = np.polyfit(x_axis, time_sequence, 1)
+#     linear_fit = x_axis * p + q
     
+#     plt.figure(1)
+#     plt.subplot(2,1,1)
+#     plt.plot(time_sequence, 'b', marker=' ')
+#     plt.plot(linear_fit, 'r', marker=' ')
+#     plt.grid(which='both', axis='both')
+#     plt.subplot(2,1,2)
+#     plt.plot(time_sequence-linear_fit)
+#     plt.grid(which='both', axis='both')
+#     plt.show()
+
+SmarAct_name_1 = r'C:\Users\yu03\Desktop\NMC Room\6 Dof PI\Rigid\np_16line\3_Noise_16line_10h_2.5Hz\1_SmarAct_CH1.bindata'
+SmarAct_name_2 = r'C:\Users\yu03\Desktop\NMC Room\6 Dof PI\Rigid\np_16line\3_Noise_16line_10h_2.5Hz\1_SmarAct_CH2.bindata'
+
+if 1:
+    SmarAct_CH1 = np.fromfile(SmarAct_name_1, dtype='>d')
+    print('CH1: ', SmarAct_CH1.shape)
+    SmarAct_CH2 = np.fromfile(SmarAct_name_2, dtype='>d')
+    print('CH2: ', SmarAct_CH2.shape)
+    SmarAct_CH1 = SmarAct_CH1[(SmarAct_CH1<-1e-200) | (SmarAct_CH1>1e-200)]
+    print('CH1: ',SmarAct_CH1.shape)
+    SmarAct_CH2 = SmarAct_CH2[(SmarAct_CH2<-1e-200) | (SmarAct_CH2>1e-200)]
+    print('CH2: ',SmarAct_CH2.shape)
+
     plt.figure(1)
-    plt.subplot(2,1,1)
-    plt.plot(time_sequence, 'b', marker=' ')
-    plt.plot(linear_fit, 'r', marker=' ')
-    plt.grid(which='both', axis='both')
-    plt.subplot(2,1,2)
-    plt.plot(time_sequence-linear_fit)
-    plt.grid(which='both', axis='both')
+    plt.plot(SmarAct_CH1)
     plt.show()
