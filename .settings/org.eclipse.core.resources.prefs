@@ -11,6 +11,7 @@ encoding/TXT_transfer.py=utf-8
 encoding/cosine_fit.py=utf-8
 encoding/envelope.py=utf-8
 encoding/line_interpolation.py=utf-8
+encoding/matrix_operation.py=utf-8
 encoding/numpy_operation.py=utf-8
 encoding/save_load_npy.py=utf-8
 encoding/save_load_txt.py=utf-8
