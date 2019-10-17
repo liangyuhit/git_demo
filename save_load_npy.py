@@ -13,7 +13,7 @@ def fit_func_line(x, p, q):
     return p*x+q
 
 
-file_name = r'C:\Users\yu03\Desktop\NMC Room\6 Dof PI\Rigid\np_16line\3_Noise_16line_10h_2.5Hz\1.npy'
+file_name = r'F:\Data_Liang_Yu\Users\yu03\Desktop\3-DoF Interferometer\NMC Room\6 Dof PI\Rigid\Cam\Nonlinearity\SmarAct new test\D_Scann_40um_50s_openmode\Compare\1_lines.npy'
 
 
 if 0:
@@ -27,7 +27,7 @@ if 0:
         np.save(f, out)
         f.close()
 
-if 0:
+if 1:
     f = open(file_name, 'rb')
     f_size = os.fstat(f.fileno()).st_size
     print(f_size)
@@ -36,10 +36,12 @@ if 0:
     while f.tell() < f_size:
 #         print(f.tell())
         line = np.load(f, allow_pickle=True)
-        print(line[0], line[1])
-        lines.append(line[0])
-        time_sequence.append(line[1])
+#         print((line))
+        lines.append(line)
     print(len(lines))
+    print(len(lines[0]))
+    print(len(lines[0][0]))
+    print(np.shape(lines))
 
     
 #     x_axis = np.linspace(0, len(time_sequence)-1, len(time_sequence))
@@ -62,19 +64,19 @@ if 0:
 #     plt.grid(which='both', axis='both')
 #     plt.show()
 
-SmarAct_name_1 = r'C:\Users\yu03\Desktop\NMC Room\6 Dof PI\Rigid\np_16line\3_Noise_16line_10h_2.5Hz\1_SmarAct_CH1.bindata'
-SmarAct_name_2 = r'C:\Users\yu03\Desktop\NMC Room\6 Dof PI\Rigid\np_16line\3_Noise_16line_10h_2.5Hz\1_SmarAct_CH2.bindata'
-
-if 1:
-    SmarAct_CH1 = np.fromfile(SmarAct_name_1, dtype='>d')
-    print('CH1: ', SmarAct_CH1.shape)
-    SmarAct_CH2 = np.fromfile(SmarAct_name_2, dtype='>d')
-    print('CH2: ', SmarAct_CH2.shape)
-    SmarAct_CH1 = SmarAct_CH1[(SmarAct_CH1<-1e-200) | (SmarAct_CH1>1e-200)]
-    print('CH1: ',SmarAct_CH1.shape)
-    SmarAct_CH2 = SmarAct_CH2[(SmarAct_CH2<-1e-200) | (SmarAct_CH2>1e-200)]
-    print('CH2: ',SmarAct_CH2.shape)
-
-    plt.figure(1)
-    plt.plot(SmarAct_CH1)
-    plt.show()
+# SmarAct_name_1 = r'C:\Users\yu03\Desktop\NMC Room\6 Dof PI\Rigid\np_16line\3_Noise_16line_10h_2.5Hz\1_SmarAct_CH1.bindata'
+# SmarAct_name_2 = r'C:\Users\yu03\Desktop\NMC Room\6 Dof PI\Rigid\np_16line\3_Noise_16line_10h_2.5Hz\1_SmarAct_CH2.bindata'
+# 
+# if 1:
+#     SmarAct_CH1 = np.fromfile(SmarAct_name_1, dtype='>d')
+#     print('CH1: ', SmarAct_CH1.shape)
+#     SmarAct_CH2 = np.fromfile(SmarAct_name_2, dtype='>d')
+#     print('CH2: ', SmarAct_CH2.shape)
+#     SmarAct_CH1 = SmarAct_CH1[(SmarAct_CH1<-1e-200) | (SmarAct_CH1>1e-200)]
+#     print('CH1: ',SmarAct_CH1.shape)
+#     SmarAct_CH2 = SmarAct_CH2[(SmarAct_CH2<-1e-200) | (SmarAct_CH2>1e-200)]
+#     print('CH2: ',SmarAct_CH2.shape)
+# 
+#     plt.figure(1)
+#     plt.plot(SmarAct_CH1)
+#     plt.show()
