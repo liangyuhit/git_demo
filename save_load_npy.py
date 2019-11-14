@@ -13,7 +13,7 @@ def fit_func_line(x, p, q):
     return p*x+q
 
 
-file_name = r'F:\Data_Liang_Yu\Users\yu03\Desktop\3-DoF Interferometer\NMC Room\6 Dof PI\Rigid\Cam\Nonlinearity\SmarAct new test\D_Scann_40um_50s_openmode\Compare\1_lines.npy'
+file_name = r'F:\Data_Liang_Yu\Users\yu03\Desktop\3-DoF Interferometer\Experiment Record\!!! Isolation Room Test\Upstair well alighned\20190808 nonliearity test\Black Head\Noise\New Isolation\openmode_weight_2.npy'
 
 
 if 0:
@@ -38,10 +38,10 @@ if 1:
         line = np.load(f, allow_pickle=True)
 #         print((line))
         lines.append(line)
-    print(len(lines))
-    print(len(lines[0]))
-    print(len(lines[0][0]))
     print(np.shape(lines))
+    print(np.shape(lines[0]))
+    print(np.shape(lines[0][0]))
+#     print(np.shape(lines))
 
     
 #     x_axis = np.linspace(0, len(time_sequence)-1, len(time_sequence))
