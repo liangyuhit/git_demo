@@ -13,7 +13,7 @@ def fit_func_line(x, p, q):
     return p*x+q
 
 
-file_name = r'F:\Data_Liang_Yu\Users\yu03\Desktop\3-DoF Interferometer\Experiment Record\!!! Isolation Room Test\Upstair well alighned\20190808 nonliearity test\Black Head\Noise\Out of box\results\diff\RAW10_16lines_1kHz_outbox_ontire_weight_lines_diff.npy'
+file_name = r'F:\Data_Liang_Yu\Users\yu03\Desktop\3-DoF Interferometer\Experiment Record\!!! Isolation Room Test\Upstair well alighned\20190808 nonliearity test\Black Head\Noise\New Isolation\openmode_weight.npy'
 
 
 if 0:
