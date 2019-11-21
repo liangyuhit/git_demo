@@ -13,7 +13,7 @@ def fit_func_line(x, p, q):
     return p*x+q
 
 
-file_name = r'F:\Data_Liang_Yu\Users\yu03\Desktop\3-DoF Interferometer\Experiment Record\!!! Isolation Room Test\Upstair well alighned\20190808 nonliearity test\Black Head\Noise\New Isolation\openmode_weight.npy'
+file_name = r'C:\Users\yu03\Desktop\long_exposure\1.npy'
 
 
 if 0:
@@ -38,7 +38,7 @@ if 1:
         line = np.load(f, allow_pickle=True)
 #         print((line))
         lines.append(line)
-    lines = lines[2:4]
+#     lines = lines[2:4]
     print(np.shape(lines))
     print(np.shape(lines[0]))
     print(np.shape(lines[0][0]))
