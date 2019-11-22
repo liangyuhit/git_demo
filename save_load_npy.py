@@ -13,7 +13,7 @@ def fit_func_line(x, p, q):
     return p*x+q
 
 
-file_name = r'C:\Users\yu03\Desktop\long_exposure\1.npy'
+file_name = r'C:\Users\yu03\Desktop\Simulated_File\test_16line.npy'
 
 
 if 0:
@@ -42,7 +42,7 @@ if 1:
     print(np.shape(lines))
     print(np.shape(lines[0]))
     print(np.shape(lines[0][0]))
-    print(np.shape(lines))
+#     print(np.shape(lines))
 
     
 #     x_axis = np.linspace(0, len(time_sequence)-1, len(time_sequence))
