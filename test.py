@@ -9,7 +9,7 @@ import numpy as np
 from numpy.polynomial.hermite import hermval
 import matplotlib.pyplot as plt
 import django
-import bokeh
+# import bokeh
 import scipy
 
 
