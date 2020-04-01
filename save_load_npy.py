@@ -13,7 +13,7 @@ def fit_func_line(x, p, q):
     return p*x+q
 
 
-file_name = r'C:\Users\yu03\Desktop\Simulated_File\test_16line.npy'
+file_name = r'E:\3-DoF Interferometer\Simulated_File\For_MST\Resolution\Resolution_20nrad_10bit_frame.npy'
 
 
 if 0:
@@ -42,6 +42,7 @@ if 1:
     print(np.shape(lines))
     print(np.shape(lines[0]))
     print(np.shape(lines[0][0]))
+    print(lines[0][0][640][600:620])
 #     print(np.shape(lines))
 
     
