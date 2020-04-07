@@ -15,6 +15,7 @@ encoding/matrix_operation.py=utf-8
 encoding/numpy_operation.py=utf-8
 encoding/save_load_npy.py=utf-8
 encoding/save_load_txt.py=utf-8
+encoding/simple_plot.py=utf-8
 encoding/test.py=utf-8
 encoding/time.py=utf-8
 encoding/tqdm_test.py=utf-8
