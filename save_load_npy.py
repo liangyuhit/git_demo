@@ -13,7 +13,7 @@ def fit_func_line(x, p, q):
     return p*x+q
 
 
-file_name = r'E:\3-DoF Interferometer\Simulated_File\For_MST\Resolution\Resolution_20nrad_10bit_frame.npy'
+file_name = r'E:\3-DoF Interferometer\Simulated_File\Resolution\Temp\results\Resolution_theory_half_pm_10bit_frame.npy'
 
 
 if 0:
