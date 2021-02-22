@@ -6,12 +6,11 @@ Created on 13.05.2019
 '''
 
 import numpy as np
-from numpy.polynomial.hermite import hermval
+# from numpy.polynomial.hermite import hermval
 import matplotlib.pyplot as plt
-import django
+# import django
 # import bokeh
 import scipy
-
 
 a = '2019-5-6 20:03:16'
 b = '2019-5-6 20:05:02 from Github'
@@ -29,7 +28,7 @@ i = '2019-07-24 22:48:57 from pi'
 j = '2019-07-24 22:51:26 from Github'
 k = '2019-7-25 13:45:05 from PTB'
 
-a = hermval(2, [0,0,1])
+# a = hermval(2, [0,0,1])
 
 from pylab import *
 
