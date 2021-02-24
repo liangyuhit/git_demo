@@ -2,6 +2,7 @@ eclipse.preferences.version=1
 encoding/3d_poly_lines.py=utf-8
 encoding/CV2_imdecode.py=utf-8
 encoding/Diff_r_for_gaussian_on_cam.py=utf-8
+encoding/Fig_Plot.py=utf-8
 encoding/Fraunhofer_Diffraction.py=utf-8
 encoding/Gaussian_Beam.py=utf-8
 encoding/IDS.py=utf-8
